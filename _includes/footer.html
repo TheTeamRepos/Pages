@@ -3,15 +3,18 @@
     <div class="footer-grid">
       <div>
         <a class="brand-mark" href="{{ '/' | relative_url }}">
-          <span class="brand-symbol" aria-hidden="true">T</span>
-          <span>The Team</span>
+          <span class="brand-symbol" aria-hidden="true">
+            <img src="{{ '/assets/images/appicon.svg' | relative_url }}" alt="" width="38" height="38">
+          </span>
+          <span>TheTeam</span>
         </a>
-        <p class="footer-copy">A public portal for product documentation, project concepts, and GitHub Pages delivery notes.</p>
+        <p class="footer-copy">Have a fun, and productive codding (;</p>
       </div>
       <div class="footer-links" aria-label="Footer navigation">
-        <a href="{{ '/docs/getting-started/' | relative_url }}">Get Started</a>
+        <a href="{{ '/docs/' | relative_url }}">Docs</a>
+        <a href="{{ '/docs/installation/' | relative_url }}">Install</a>
         <a href="{{ '/docs/concepts/' | relative_url }}">Concepts</a>
-        <a href="{{ '/docs/repository-guide/' | relative_url }}">Repository Guide</a>
+        <a href="{{ site.repository_url }}">GitHub</a>
       </div>
     </div>
   </div>
