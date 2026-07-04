@@ -1,0 +1,31 @@
+name: Validate pull request
+
+on:
+  pull_request:
+    branches: ["main"]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: "pr-validation-${{ github.event.pull_request.number || github.ref }}"
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@4a9ddd6f338a97768b8006bf671dfbad383215f4
+        with:
+          ruby-version: "3.1"
+          bundler-cache: true
+          cache-version: 0
+
+      - name: Validate Jekyll site
+        run: make validate
+        env:
+          JEKYLL_ENV: production
