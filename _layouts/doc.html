@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<section class="doc-shell">
+  <div class="container-xl">
+    <div class="doc-layout">
+      <aside class="doc-sidebar" aria-label="Documentation navigation">
+        <p class="doc-sidebar-title">Documentation</p>
+        <a href="{{ '/docs/getting-started/' | relative_url }}">Getting Started</a>
+        <a href="{{ '/docs/concepts/' | relative_url }}">Concepts</a>
+        <a href="{{ '/docs/repository-guide/' | relative_url }}">Repository Guide</a>
+      </aside>
+      <article class="doc-content">
+        {{ content }}
+      </article>
+    </div>
+  </div>
+</section>
