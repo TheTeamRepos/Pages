@@ -92,6 +92,19 @@
   background: transparent;
 }
 
+.todo-list {
+  display: grid;
+  gap: 0.55rem;
+  padding-left: 1.1rem;
+}
+
+.todo-list li {
+  padding: 0.45rem 0.65rem;
+  border: 1px solid var(--elements-border);
+  border-radius: 8px;
+  background: var(--background-secondary-tr2);
+}
+
 @media (max-width: 991px) {
   .doc-layout {
     grid-template-columns: 1fr;

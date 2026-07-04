@@ -1,7 +1,8 @@
-title: The Team
-description: Multi-agent workspace for coordinated product work.
+title: TheTeam
+description: Multi-agent workspace for coordinated software delivery.
 url: ""
 baseurl: ""
+repository_url: "https://github.com/TheTeamRepos/TheTeam"
 
 markdown: kramdown
 highlighter: rouge

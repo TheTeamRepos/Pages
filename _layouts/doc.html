@@ -7,9 +7,10 @@ layout: default
     <div class="doc-layout">
       <aside class="doc-sidebar" aria-label="Documentation navigation">
         <p class="doc-sidebar-title">Documentation</p>
-        <a href="{{ '/docs/getting-started/' | relative_url }}">Getting Started</a>
-        <a href="{{ '/docs/concepts/' | relative_url }}">Concepts</a>
-        <a href="{{ '/docs/repository-guide/' | relative_url }}">Repository Guide</a>
+        {% for item in site.data.docs %}
+          {% assign item_url = item.url | relative_url %}
+          <a href="{{ item_url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.title }}</a>
+        {% endfor %}
       </aside>
       <article class="doc-content">
         {{ content }}
