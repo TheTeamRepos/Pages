@@ -11,7 +11,6 @@ TODO: build the TheTeam documentation index.
 ## Planned Sections
 
 - Installation
-- Features
 - Concepts
 - Collaboration flow
 - Integrations
