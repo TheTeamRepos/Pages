@@ -1,5 +1,6 @@
 _site/
 _temp/
+.playwright-cli/
 .sass-cache/
 .jekyll-cache/
 .jekyll-metadata
