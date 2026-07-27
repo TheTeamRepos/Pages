@@ -14,7 +14,7 @@ restore:
 validate: build
 
 run:
-	bundle exec jekyll serve --livereload
+	bundle exec jekyll serve --livereload --livereload-ignore "_temp/**"
 
 b: build
 v: validate

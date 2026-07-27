@@ -1,12 +1,12 @@
 ---
 title: Team Routines
-description: How Team Routines save repeatable TheTeam workflows.
+description: Node-based automation routines for TheTeam sessions and agents.
 layout: feature
 ---
 
 # Team Routines
 
-Team routines are reusable workflows for jobs you run again and again. They are visual recipes made from triggers, AI steps, scripts, variables, and chat events.
+Team routines are node-based automations. Trigger nodes can react to events such as a new chat starting or a new message matching a regex. Routine nodes can run AI steps, scripts, set variables, and emit chat events. A routine can also be exposed as an agent tool, making it callable during inference.
 
 <figure class="doc-screenshot">
   <img src="{{ '/assets/images/features/routine-builder.png' | relative_url }}" alt="TheTeam routine builder with connected workflow nodes" width="1435" height="781">
@@ -15,19 +15,21 @@ Team routines are reusable workflows for jobs you run again and again. They are 
 
 ## What It Does
 
-- Saves named workflows for common team jobs.
-- Uses a visual builder with connected nodes.
-- Supports triggers, AI runner steps, PowerShell scripts, session variables, and chat events.
-- Lets you import, export, save, and delete routines.
+- Saves named node-based automations.
+- Uses a visual builder with connected trigger and action nodes.
+- Supports triggers such as new chat start and message regex match.
+- Supports AI runner steps, PowerShell scripts, session variables, and chat events.
+- Can expose routines as agent tools for use during inference.
+- Supports importing, exporting, saving, and deleting routines.
 
-## Why It Helps
+## Routine Model
 
-Some work should not start from scratch every time. Routines keep the shape of a repeated process while still letting the team work inside a session.
+Routines define event-driven automation around team sessions. The same routine model can run from configured triggers or appear as a callable tool for agents.
 
-## Typical Flow
+## Routine Flow
 
 1. Open Team routines from the sidebar.
 2. Create a new routine or start from an example.
 3. Add the nodes that describe the workflow.
 4. Connect the nodes in the order the work should run.
-5. Save the routine and use it when that job comes back.
+5. Save the routine, then run it from a configured trigger or expose it as an agent tool.

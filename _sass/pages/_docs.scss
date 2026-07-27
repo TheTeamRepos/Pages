@@ -32,7 +32,7 @@
   padding: 0.55rem 0.65rem;
   border-radius: 6px;
   color: var(--foreground-middle);
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .doc-sidebar a[aria-current="page"] {
@@ -96,7 +96,6 @@
 .doc-feature-list {
   display: grid;
   gap: 1.25rem;
-  margin-top: 2.2rem;
 }
 
 .doc-feature-item {
@@ -126,6 +125,14 @@
   border: 1px solid var(--elements-border);
   border-radius: 8px;
   background: var(--background-secondary);
+}
+
+.doc-feature-item-text {
+  grid-template-columns: 1fr;
+}
+
+.doc-feature-item-text > div {
+  max-width: 44rem;
 }
 
 .doc-feature-kicker {

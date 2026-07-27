@@ -1,6 +1,6 @@
 ---
 title: Concepts
-description: Core product concepts behind TheTeam.
+description: Core concepts behind TheTeam.
 layout: doc
 ---
 

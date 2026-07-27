@@ -1,6 +1,6 @@
 ---
 title: TheTeam
-description: Product landing page and documentation for TheTeam.
+description: Project landing page and documentation for TheTeam.
 ---
 
 <section class="hero-section">
