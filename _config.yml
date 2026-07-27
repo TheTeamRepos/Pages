@@ -20,6 +20,7 @@ exclude:
   - vendor/
   - node_modules/
   - _site/
+  - _temp/
 
 defaults:
   - scope:

@@ -2,7 +2,15 @@
   url: /features/
 - title: Shared Team Room
   url: /features/shared-team-room/
+- title: AI Agents Configuration
+  url: /features/ai-agents-configuration/
+- title: AI Agents Tools
+  url: /features/ai-agents-tools/
+- title: AI Connections
+  url: /features/ai-connections/
 - title: Boards
   url: /features/boards/
+- title: Memory
+  url: /features/memory/
 - title: Team Routines
   url: /features/team-routines/
